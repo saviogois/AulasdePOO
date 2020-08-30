@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>ServerDateServlet</servlet-name>
+        <servlet-class>servlets.ServerDateServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SalvadoServlet</servlet-name>
+        <servlet-class>servlets.GreetingServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SomaServlet</servlet-name>
+        <servlet-class>servlets.SubtractionServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>SavioGoisServlet</servlet-name>
+        <servlet-class>servlets.SavioGoisServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ServerDateServlet</servlet-name>
+        <url-pattern>/server-date.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SalvadoServlet</servlet-name>
+        <url-pattern>/estas-salvadinho.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SomaServlet</servlet-name>
+        <url-pattern>/sub.html</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SavioGoisServlet</servlet-name>
+        <url-pattern>/nome.html</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
